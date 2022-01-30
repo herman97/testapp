@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF98C2E7277263F800D71BCC /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98C2E6277263F800D71BCC /* CircleImage.swift */; };
+		DF98C2EC277273ED00D71BCC /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = DF98C2EB277273ED00D71BCC /* CarBode */; };
+		DF98C2EE2772747600D71BCC /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98C2ED2772747600D71BCC /* ScanView.swift */; };
+		DFA29A882774D45900293172 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA29A872774D45900293172 /* Model.swift */; };
 		DFB755CB2772536F0050FE68 /* akApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB755CA2772536F0050FE68 /* akApp.swift */; };
 		DFB755CD2772536F0050FE68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB755CC2772536F0050FE68 /* ContentView.swift */; };
 		DFB755CF277253720050FE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB755CE277253720050FE68 /* Assets.xcassets */; };
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF98C2E6277263F800D71BCC /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		DF98C2ED2772747600D71BCC /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		DFA29A872774D45900293172 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DFB755C72772536F0050FE68 /* ak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB755CA2772536F0050FE68 /* akApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = akApp.swift; sourceTree = "<group>"; };
 		DFB755CC2772536F0050FE68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF98C2EC277273ED00D71BCC /* CarBode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFA29A862774B49400293172 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFA29A872774D45900293172 /* Model.swift */,
+				DF98C2E6277263F800D71BCC /* CircleImage.swift */,
+				DFB755CC2772536F0050FE68 /* ContentView.swift */,
+				DF98C2ED2772747600D71BCC /* ScanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DFB755BE2772536F0050FE68 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +113,8 @@
 		DFB755C92772536F0050FE68 /* ak */ = {
 			isa = PBXGroup;
 			children = (
+				DFA29A862774B49400293172 /* Views */,
 				DFB755CA2772536F0050FE68 /* akApp.swift */,
-				DFB755CC2772536F0050FE68 /* ContentView.swift */,
 				DFB755CE277253720050FE68 /* Assets.xcassets */,
 				DFB755D0277253720050FE68 /* Preview Content */,
 			);
@@ -143,6 +162,9 @@
 			dependencies = (
 			);
 			name = ak;
+			packageProductDependencies = (
+				DF98C2EB277273ED00D71BCC /* CarBode */,
+			);
 			productName = ak;
 			productReference = DFB755C72772536F0050FE68 /* ak.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = DFB755BE2772536F0050FE68;
+			packageReferences = (
+				DF98C2EA277273ED00D71BCC /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+			);
 			productRefGroup = DFB755C82772536F0050FE68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA29A882774D45900293172 /* Model.swift in Sources */,
 				DFB755CD2772536F0050FE68 /* ContentView.swift in Sources */,
 				DFB755CB2772536F0050FE68 /* akApp.swift in Sources */,
+				DF98C2EE2772747600D71BCC /* ScanView.swift in Sources */,
+				DF98C2E7277263F800D71BCC /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,13 +447,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ak/Preview Content\"";
+				DEVELOPMENT_TEAM = BJKYSVA9WZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ak requires access to your phone’s camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,7 +467,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,13 +479,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ak/Preview Content\"";
+				DEVELOPMENT_TEAM = BJKYSVA9WZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ak requires access to your phone’s camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +499,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -579,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF98C2EA277273ED00D71BCC /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = exactVersion;
+				version = 2.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF98C2EB277273ED00D71BCC /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF98C2EA277273ED00D71BCC /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFB755BF2772536F0050FE68 /* Project object */;
 }
